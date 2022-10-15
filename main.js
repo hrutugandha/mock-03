@@ -9,16 +9,22 @@ function Register() {
  
                 if (name == "" ) {
                     alert("enter name!");
+                    return false;
                 }
                 if (email == "" || !email.match(valid)) {
                     alert("enter valid email address!");
+                    return false;
                 }
  
+                if (/@gmail.com\s*$/.test(email)) {
+                    console.log("it ends in @gmail.com");
+                    return false;
+                 } 
+
                 if(password.length < 6 || password == ""){
                     alert("Password should be atleast 6 character long");
                     return false;
  
                 }
- 
                 return true;
 }
