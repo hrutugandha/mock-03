@@ -1,0 +1,29 @@
+#form-div{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #FEF5EF;
+}
+
+.form > div{
+        /* border: 1px solid black; */
+        margin: auto;
+}
+
+.input-div{
+    float: center;
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+
+input{
+    width: 70%;
+    margin-left: 20px;
+    float:right;
+    margin: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid red; */
+}
