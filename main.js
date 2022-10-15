@@ -10,7 +10,7 @@ function Register() {
                 if (name == "" ) {
                     alert("enter name!");
                 }
-                if (email == "") {
+                if (email == "" || !email.match(valid)) {
                     alert("enter valid email address!");
                 }
  
