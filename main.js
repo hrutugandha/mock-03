@@ -21,10 +21,14 @@ function Register() {
                     return false;
                  } 
 
-                if(password.length < 6 || password == ""){
+                 if(password == ""){
+                    alert("Enter password!");
+                    return false;
+                }
+
+                if(password.length < 6){
                     alert("Password should be atleast 6 character long");
                     return false;
- 
                 }
                 return true;
 }
