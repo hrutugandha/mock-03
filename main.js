@@ -1,33 +1,23 @@
 
 function Register() {
-          let  name= document.getElementById('name').value;
-          let email= document.getElementById('email').value;
-          let  password= document.getElementById('password').value;
+          const  name= document.getElementById('name').value;
+          const email= document.getElementById('email').value;
+          const  password= document.getElementById('password').value;
       
-        console.log(name, email, password);   
+        console.log(name, email, password.length);   
         var valid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;                     
  
                 if (name == "" ) {
                     alert("enter name!");
                     return false;
                 }
-                if (email == "" || !email.match(valid)) {
+                 if (email == "" || !email.match(valid) || /@gmail.com\s*$/.test(!email)) {
                     alert("enter valid email address!");
                     return false;
                 }
- 
-                if (/@gmail.com\s*$/.test(email)) {
-                    console.log("it ends in @gmail.com");
-                    return false;
-                 } 
 
-                 if(password == ""){
-                    alert("Enter password!");
-                    return false;
-                }
-
-                if(password.length < 6){
-                    alert("Password should be atleast 6 character long");
+                  if(password.length < 6 || password.length=== 0){
+                    alert("Enter your password");
                     return false;
                 }
                 return true;
